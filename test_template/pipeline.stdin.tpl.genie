@@ -1,0 +1,4 @@
+@< path("{{TEST_DRIVER_NAME}}") >@ {# FILENAME = pipeline.stdin.tpl #}
+@< MODELNAME >@
+{{init_params}}
+{{run_params}}

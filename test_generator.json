@@ -1,0 +1,2 @@
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "A2B_hP9_189_fg_ad"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}, "kimnum": "695355935742"}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "AB_oP8_62_c_c"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}, "kimnum": "735493093144"}

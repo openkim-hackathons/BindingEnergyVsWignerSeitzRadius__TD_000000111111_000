@@ -4,7 +4,7 @@ from math import pi
 from crystal_genome_util.aflow_util import get_stoich_reduced_list_from_prototype
 from ase.build import bulk
 
-class BindingEnergyVsWignerSeitzRadius(CrystalGenomeTest):
+class Test(CrystalGenomeTest):
     def _calculate(self, structure_index: int, a_min_frac: float, a_max_frac: float, N: int):
         """
         structure_index:
@@ -94,12 +94,11 @@ if __name__ == "__main__":
     # if called directly, do some debugging examples
     ####################################################
 
-
     # This queries for equilibrium structures in this prototype and builds atoms
-    # test = BindingEnergyVsWignerSeitzRadius(model_name="MEAM_LAMMPS_KoJimLee_2012_FeP__MO_179420363944_002", stoichiometric_species=['Fe','P'], prototype_label='AB_oP8_62_c_c')
+    # test = Test(model_name="MEAM_LAMMPS_KoJimLee_2012_FeP__MO_179420363944_002", stoichiometric_species=['Fe','P'], prototype_label='AB_oP8_62_c_c')
                     
     # Alternatively, for debugging, give it atoms object or a list of atoms objects
     atoms1 = bulk('NaCl','rocksalt',a=4.58)
     atoms2 = bulk('NaCl','cesiumchloride',a=4.58)
-    test = BindingEnergyVsWignerSeitzRadius(model_name="Sim_LAMMPS_EIM_Zhou_2010_BrClCsFIKLiNaRb__SM_259779394709_000", atoms=atoms1)
+    test = Test(model_name="Sim_LAMMPS_EIM_Zhou_2010_BrClCsFIKLiNaRb__SM_259779394709_000", atoms=atoms1)
     test(a_min_frac=0.75, a_max_frac=1.5, N=51)
