@@ -4,7 +4,7 @@ from math import pi
 from crystal_genome_util.aflow_util import get_stoich_reduced_list_from_prototype
 from ase.build import bulk
 
-class Test(CrystalGenomeTest):
+class TestDriver(CrystalGenomeTest):
     def _calculate(self, structure_index: int, a_min_frac: float, a_max_frac: float, N: int):
         """
         structure_index:
@@ -98,6 +98,7 @@ if __name__ == "__main__":
     # test = Test(model_name="MEAM_LAMMPS_KoJimLee_2012_FeP__MO_179420363944_002", stoichiometric_species=['Fe','P'], prototype_label='AB_oP8_62_c_c')
                     
     # Alternatively, for debugging, give it atoms object or a list of atoms objects
-    atoms = bulk('AlCo','cesiumchloride',a=2.8663)
-    test = Test(model_name="EAM_Dynamo_VailheFarkas_1997_CoAl__MO_284963179498_005", atoms=atoms)
+    atoms = bulk('AlCo','cesiumchloride',a=2.8663,cubic=True)
+
+    test = TestDriver(model_name="EAM_Dynamo_VailheFarkas_1997_CoAl__MO_284963179498_005", atoms=atoms)
     test(a_min_frac=0.75, a_max_frac=1.5, N=51)
