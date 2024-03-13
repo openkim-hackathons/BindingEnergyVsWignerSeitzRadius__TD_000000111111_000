@@ -98,7 +98,6 @@ if __name__ == "__main__":
     # test = Test(model_name="MEAM_LAMMPS_KoJimLee_2012_FeP__MO_179420363944_002", stoichiometric_species=['Fe','P'], prototype_label='AB_oP8_62_c_c')
                     
     # Alternatively, for debugging, give it atoms object or a list of atoms objects
-    atoms1 = bulk('NaCl','rocksalt',a=4.58)
-    atoms2 = bulk('NaCl','cesiumchloride',a=4.58)
-    test = Test(model_name="Sim_LAMMPS_EIM_Zhou_2010_BrClCsFIKLiNaRb__SM_259779394709_000", atoms=atoms1)
+    atoms = bulk('AlCo','cesiumchloride',a=2.8663)
+    test = Test(model_name="EAM_Dynamo_VailheFarkas_1997_CoAl__MO_284963179498_005", atoms=atoms)
     test(a_min_frac=0.75, a_max_frac=1.5, N=51)
