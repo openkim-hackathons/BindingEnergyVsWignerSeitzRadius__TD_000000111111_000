@@ -54,25 +54,13 @@ class TestDriver(CrystalGenomeTest):
         ####################################################
         # SOME USAGE EXAMPLES NOT NECESSARY FOR THE PRESENT TEST 
         ####################################################
-        # This is unnecessary here because we are not changing the atoms object, but if we were and we needed to re-analyze, this is how you do it 
+        # This is unnecessary here because we are not changing the atoms object, but if we were and we needed to re-analyze, this is how you do it.
+        # If the symmetry of the crystal changes upon re-analysis, an error will be raised
         self.atoms[structure_index].set_cell(original_cell,scale_atoms=True)
         self._update_aflow_designation_from_atoms(structure_index)
 
-        # alternatively, you can update the `structure_index`-th AFLOW symmetry designation from a specified atoms object instead of from 
-        # self.atoms[structure_index]. The function will also raise an error if the prototype label changes, so you can use it as a try-except to detect
-        # symmetry changes
-        atoms_new = atoms.copy()
-        cell = atoms_new.get_cell()
-        cell[1,2] += 0.5 # this is highly likely to change the symmetry
-        atoms_new.set_cell(cell,scale_atoms=True)
-
-        try:
-            # this will intentionally raise an exception to demonstrate changing symmetry issue
-            self._update_aflow_designation_from_atoms(structure_index,atoms_new)
-            raise RuntimeError("We should not have gotten here")
-        except KIMASEError as e:
-            print("We have successfully caught an exception with the following message:")
-            print(e.msg)
+        # You can also pass it some other atoms object instead of updating self.atoms:
+        # self._update_aflow_designation_from_atoms(structure_index, some_other_atoms_object)
         ####################################################
         # USAGE EXAMPLES END
         ####################################################

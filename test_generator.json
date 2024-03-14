@@ -1,2 +1,21 @@
-{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "A2B_hP9_189_fg_ad"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}, "kimnum": "695355935742"}
-{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "AB_oP8_62_c_c"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}, "kimnum": "735493093144"}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "A2B_hP9_189_fg_ad"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "A2B_oC18_38_abde_ae"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "A3B_tI32_82_3g_g"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "A4B_tP5_123_ace_b"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "AB_oP8_62_c_c"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "AB2_oP6_58_a_g"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "AB4_mC40_15_ae_4f"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "AB4_mP30_14_ae_6e"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe", "P"], "prototype_label": "AB4_oC20_20_a_2c"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe"], "prototype_label": "A_cF4_225_a"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe"], "prototype_label": "A_cI2_229_a"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe"], "prototype_label": "A_hP2_194_c"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe"], "prototype_label": "A_tP1_123_a"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["Fe"], "prototype_label": "A_tP28_136_f2ij"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["P"], "prototype_label": "A_aP24_2_12i"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["P"], "prototype_label": "A_cP1_221_a"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["P"], "prototype_label": "A_hR2_166_c"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["P"], "prototype_label": "A_mC16_12_2ij"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["P"], "prototype_label": "A_oC8_64_f"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["P"], "prototype_label": "A_oI4_74_e"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
+{"init_params": {"stoichiometric_species": ["P"], "prototype_label": "A_tI4_139_e"}, "run_params": {"a_min_frac": 0.75, "a_max_frac": 1.5, "N": 51}}
