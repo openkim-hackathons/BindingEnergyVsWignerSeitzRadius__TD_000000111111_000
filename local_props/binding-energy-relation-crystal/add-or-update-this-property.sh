@@ -16,8 +16,8 @@ property=load('$property_dir/property.edn');
 property_id=property['property-id'];
 properties[property_id]=property;
 if version.parse(kim_property.__version__) < version.parse('2.6.0'):
-   kim_property.pickle_kim_properties(properties);
+   kim_property.pickle.pickle_kim_properties(properties);
 else:
    kim_property.ednify.ednify_kim_properties(properties);
-PrettyPrinter().pprint(get_properties()[property_id]);
+PrettyPrinter().pprint(kim_property.get_properties()[property_id]);
 print('\n\nSuccessfully pickled or ednified properties! Scroll up to check the property you just added.');"
